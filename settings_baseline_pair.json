@@ -1,0 +1,14 @@
+{
+	"logit_with_description_1":{
+		"problem_type": "pairwise",
+		"model_type": "baseline",
+		"vectorization": "magellan",
+		"model": "random-forest",
+		"dataset_type": "standard",
+		"dataset_size": "small",
+		"use_description":true,
+		"train_lang": ["en"],
+		"eval_lang": ["en", "de-en", "es-en", "fr-en"],
+		"category": "toy"
+	}
+ }

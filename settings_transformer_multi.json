@@ -1,0 +1,27 @@
+{
+  "test_run_zero_without_description_multi":{
+	"problem_type": "multiclass",
+	"model_type": "transformer",
+	"model": "bert-base-multilingual-uncased",
+    "n_runs": 3,
+	"use_description": false,
+    "hyperparameter_search": true,
+    "train_lang": ["en"],
+	"eval_lang": ["en","de", "es", "fr"],
+	"category": "toy",
+    "model_parameters": {
+      "overwrite_output_dir": true,
+      "num_train_epochs": 25,
+      "learning_rate": 5e-5,
+      "save_total_limit": 1,
+      "per_device_train_batch_size": 16,
+      "per_device_eval_batch_size": 64,
+      "gradient_accumulation_steps": 1,
+      "weight_decay": 0.01,
+      "evaluation_strategy": "epoch",
+      "load_best_model_at_end": true,
+      "metric_for_best_model": "f1",
+      "disable_tqdm": false
+    }
+  }
+}

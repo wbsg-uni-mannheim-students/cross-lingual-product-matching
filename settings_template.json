@@ -1,0 +1,24 @@
+{
+  "test_run_zero_without_description":{
+	"problem_type": <"multiclass" | "pairwise">,
+	"model_type": <"transformer" | "baseline">,
+    "vectorization_type": <"binary" | "tf-idf" | "cooc" | "magellan">,
+	"model": <"bert-base-multilingual-uncased" | "bert-base-uncased" | "logistic-regression" | "random-forest" | "svm" >,
+	"dataset_size": <"small" | "large">,
+	"use_description": <true | false>,
+    "train_lang": [<"en" | "de" | "de-en">, <lang>, ...],
+	"eval_lang": [<"en" | "de" | ...>, <lang>, <lang>, ...],
+	"category": [<toy | phone>, <toy | phone>],
+    "model_parameters": {
+      "overwrite_output_dir": true,
+      "num_train_epochs": 25,
+      "save_total_limit": 1,
+      "save_steps": 5000,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 64,
+      "gradient_accumulation_steps": 2,
+      "warmup_steps": 500,
+      "weight_decay": 0.01
+    }
+  }
+ }

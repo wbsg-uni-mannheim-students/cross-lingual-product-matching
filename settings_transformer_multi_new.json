@@ -1,0 +1,29 @@
+{
+  "toy_multiclass_xlm-r___title_de":{
+	"problem_type": "multiclass",
+	"model_type": "transformer",
+	"model": "xlm-roberta-base",
+    "n_runs": 3,
+    "n_hp_runs": 5,
+	"use_description": false,
+    "hyperparameter_search": true,
+    "resume_training": false,
+    "train_lang": ["de"],
+	"eval_lang": ["de"],
+	"category": "toy",
+    "model_parameters": {
+      "overwrite_output_dir": true,
+      "num_train_epochs": 3,
+      "learning_rate": 2.696595661493248e-05,
+      "save_total_limit": 1,
+      "per_device_train_batch_size": 64,
+      "per_device_eval_batch_size": 64,
+      "gradient_accumulation_steps": 1,
+      "weight_decay": 0.01,
+      "evaluation_strategy": "epoch",
+      "load_best_model_at_end": true,
+      "metric_for_best_model": "f1",
+      "disable_tqdm": false
+    }
+  }
+}
