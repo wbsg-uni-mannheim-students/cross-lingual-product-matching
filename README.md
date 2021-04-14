@@ -1,6 +1,5 @@
 # Cross-lingual Product Matching using Transformers
 
-# Project Goal
 **Can matching knowledge be transferred between languages?**
 
 - Can we augment performance on languages with small amounts of training data by adding data from more readily available languages (English)? (E.g. Fine-tune model for the task using english data **/** Further fine-tune using few examples of target language (few-shot learning))
