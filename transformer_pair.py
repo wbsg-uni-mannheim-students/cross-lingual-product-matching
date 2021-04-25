@@ -16,8 +16,9 @@ from sklearn.model_selection import train_test_split
 
 # Define string constants
 SMALL = "small"
+MEDIUM = "medium"
 LARGE = "large"
-EXTRA_LARGE = "xl"
+XLARGE = "xlarge"
 
 # Set seed for reproducibility
 # set_seed(2021)
@@ -61,11 +62,14 @@ def run_transformer_pair(input_path: str, setting_keys: List[str] = None):
         if dataset_size == SMALL:
             train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{SMALL}.csv')
             test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
+        elif dataset_size == MEDIUM:
+            train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{MEDIUM}.csv')
+            test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
         elif dataset_size == LARGE:
             train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{LARGE}.csv')
             test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
-        elif dataset_size == EXTRA_LARGE:
-            train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{EXTRA_LARGE}.csv')
+        elif dataset_size == XLARGE:
+            train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{XLARGE}.csv')
             test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
 
         # Read the data
