@@ -18,7 +18,9 @@ from sklearn.svm import LinearSVC
 
 # Define string constants
 SMALL = "small"
+MEDIUM = "medium"
 LARGE = "large"
+XLARGE = "xlarge"
 LOGIT = "logistic-regression"
 RAFO = "random-forest"
 SVM = "svm"
@@ -59,8 +61,14 @@ def run_baseline_pair(input_path: str, setting_keys: List[str] = None):
         if dataset_size == SMALL:
             train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{SMALL}.csv')
             test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
+        elif dataset_size == MEDIUM:
+            train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{MEDIUM}.csv')
+            test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
         elif dataset_size == LARGE:
             train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{LARGE}.csv')
+            test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
+        elif dataset_size == XLARGE:
+            train_data_p = dataset_p.joinpath(f'pairwise_train_set_{category}_{XLARGE}.csv')
             test_data_p = dataset_p.joinpath(f'pairwise_test_set_{category}.csv')
 
         # Read the data
@@ -156,8 +164,7 @@ def run_baseline_pair(input_path: str, setting_keys: List[str] = None):
             est = LinearSVC()
             parameters = {
                 'C': [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000],
-                'class_weight': ['balanced'],
-                'n_jobs': [-2]
+                'class_weight': ['balanced']
             }
         else:
             # Other models are not implemented
