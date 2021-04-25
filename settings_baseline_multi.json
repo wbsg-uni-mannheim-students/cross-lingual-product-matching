@@ -1,20 +1,20 @@
 {
-	"toy_multiclass_logistic-regression__tf-idf_title_en":{
+	"toy_multiclass_svm__tf-idf_title_en":{
 		"problem_type": "multiclass",
 		"model_type": "baseline",
 		"vectorization": "tf-idf",
-		"model": "logistic-regression",
+		"model": "svm",
 		"dataset_type": "standard",
 		"use_description":false,
 		"train_lang": ["en"],
 		"eval_lang": ["en", "de", "fr", "es"],
 		"category": "toy"
 	},
-	"phone_multiclass_logistic-regression__tf-idf_title_en":{
+	"phone_multiclass_svm__tf-idf_title_en":{
 		"problem_type": "multiclass",
 		"model_type": "baseline",
 		"vectorization": "tf-idf",
-		"model": "logistic-regression",
+		"model": "svm",
 		"dataset_type": "standard",
 		"use_description":false,
 		"train_lang": ["en"],

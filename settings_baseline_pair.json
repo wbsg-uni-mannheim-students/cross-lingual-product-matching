@@ -1,14 +1,27 @@
 {
-	"logit_with_description_1":{
+	"toy_multiclass_svm__cooc_title_en":{
 		"problem_type": "pairwise",
 		"model_type": "baseline",
-		"vectorization": "magellan",
-		"model": "random-forest",
-		"dataset_type": "standard",
+		"vectorization": "cooc",
+		"model": "svm",
+		"dataset_size": "small",
+		"use_description":false,
+		"train_lang": ["en"],
+		"eval_lang": ["en", "de", "es", "fr"],
+		"category": "toy"
+	},
+	
+	"phone_multiclass_svm__magellan_title_en":{
+		"problem_type": "pairwise",
+		"model_type": "baseline",
+		"vectorization": "cooc",
+		"model": "svm",
 		"dataset_size": "small",
 		"use_description":true,
 		"train_lang": ["en"],
-		"eval_lang": ["en", "de-en", "es-en", "fr-en"],
-		"category": "toy"
+		"eval_lang": ["en", "de", "es", "fr"],
+		"category": "phone"
 	}
+	
+	
  }
