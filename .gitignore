@@ -1,3 +1,6 @@
 
 *.csv
 results/results.csv
+*.xml
+*.iml
+*.pyc
