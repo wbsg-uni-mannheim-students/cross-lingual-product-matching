@@ -26,4 +26,4 @@ conda activate team_project
 ````
 
 **Data**
-- Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but are available for research purposes only.
+Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but are available for research purposes only.
