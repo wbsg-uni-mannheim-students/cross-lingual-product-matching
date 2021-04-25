@@ -16,7 +16,7 @@ Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but 
 ## Setup
 **How to use this Repository**
 
-*Before installing, make sure to have [Microsoft Build Tools for C++](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/)  installed for fastText*
+*Before installing, make sure to have [Microsoft Build Tools for C++](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/)  installed for py_entitymatching*
 ````bash
 cd path/to/repo
 conda env create -f environment.yml
