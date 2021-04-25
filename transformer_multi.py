@@ -15,11 +15,6 @@ from transformers import Trainer, TrainingArguments
 from transformers.trainer_callback import EarlyStoppingCallback
 from sklearn.model_selection import train_test_split
 
-
-# Define string constants
-SMALL = "small"
-LARGE = "large"
-
 # Set seed for reproducibility
 #set_seed(2021)
 
