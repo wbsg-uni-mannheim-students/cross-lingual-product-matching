@@ -4,11 +4,11 @@
 	"model_type": <"transformer" | "baseline">,
     "vectorization_type": <"binary" | "tf-idf" | "cooc" | "magellan">,
 	"model": <"bert-base-multilingual-uncased" | "bert-base-uncased" | "logistic-regression" | "random-forest" | "svm" >,
-	"dataset_size": <"small" | "large">,
+	"dataset_size": <"small" | "medium" | "large" | "xlarge">,
 	"use_description": <true | false>,
-    "train_lang": [<"en" | "de" | "de-en">, <lang>, ...],
-	"eval_lang": [<"en" | "de" | ...>, <lang>, <lang>, ...],
-	"category": [<toy | phone>, <toy | phone>],
+    "train_lang": [<"en" | "de">]
+	"eval_lang": [<"en" | "de" | "es" |"fr">],
+	"category": [<toy | phone>],
     "model_parameters": {
       "overwrite_output_dir": true,
       "num_train_epochs": 25,
