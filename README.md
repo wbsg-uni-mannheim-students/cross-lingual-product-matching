@@ -20,10 +20,11 @@ Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but 
 
 ### Settings files
 
-Individual experiments can be configured using the .json settings files. 
+Individual experiments can be configured using the `.json` settings files. 
 The `settings_template.json` provides an overview over the possible settings for the experiments.
 Some settings are only avaible in the multi-class setup but not in the pair-wise case, and vice versa.
 
 ### Run Experiments
 To run a experiment, make sure to provide the path of the individual `.json` settings file
-as input agrument, such as 
+as input agrument. For instance, to run the `settings_baseline_multi.json`, include the argument
+*--i path_to_file\settings_baseline_multi.json
