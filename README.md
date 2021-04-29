@@ -4,7 +4,7 @@ In our work, we  seek to explore whether learned matching knowledge in the produ
 
 ### Contributors 
 These people have contributed to this repository:
- - [@andreaskuepfer(https://github.com/andreaskuepfer)
+ - [@andreaskuepfer](https://github.com/andreaskuepfer)
  - [@bebing](https://github.com/bebing)
  - [@daniels9](https://github.com/daniels9)
  - [@fniesel](https://github.com/fniesel)
