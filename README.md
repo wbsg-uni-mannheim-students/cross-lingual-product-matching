@@ -26,6 +26,6 @@ Some settings are only available in the multi-class setup but not in the pair-wi
 
 ### Run Experiments
 To run a experiment, make sure to provide the path of the individual `.json` settings file
-as input agrument. For instance, to run the `settings_baseline_multi.json`, include the argument:
+as input agrument. For instance, to run `settings_baseline_multi.json`, include the argument:
 
 *--i path_to_file\settings_baseline_multi.json*
