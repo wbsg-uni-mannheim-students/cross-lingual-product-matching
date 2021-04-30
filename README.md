@@ -11,7 +11,7 @@ These people have contributed to this repository:
  - [@JakobGutmann](https://github.com/JakobGutmann)
 
 ### Data
-Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but are available for research purposes only. The datasets have to be included in the provided folder 'Datasets' for the experiments.
+Our datasets can be requested via mail at ralph@informatik.uni-mannheim.de, but are available for research purposes only. The datasets have to be included in the provided folder 'datasets' for the experiments.
 
 ## Setup
 **How to use this Repository**
