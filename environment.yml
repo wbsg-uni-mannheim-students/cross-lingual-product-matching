@@ -1,0 +1,25 @@
+name: cross-lingual-product-matching
+channels:
+  - defaults
+dependencies:
+  - pip=20.2.4
+  - pip:
+    - fasttext==0.9.2
+    - numpy==1.19.3
+    - pandas==1.1.0
+    - tldextract==3.0.2
+    - tqdm==4.51.0
+    - matplotlib==3.3.2
+    - nltk==3.5
+    - langdetect==1.0.8
+    - scrapy==2.4.0
+    - webdriver-manager==3.2.2
+    - selenium==3.141.0
+    - Twisted==20.3.0
+    - scrapy-fake-useragent==1.4.4
+    - scrapy_proxies==0.4
+    - sklearn
+    - torch==1.7.1
+    - transformers==4.3.1
+    - optuna==2.5.0
+    - py_entitymatching==0.4.0
